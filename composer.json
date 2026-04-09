@@ -1,0 +1,45 @@
+{
+    "name": "ucubix/laravel-client",
+    "description": "Laravel wrapper for the UCubix Distribution API PHP Client",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["ucubix", "laravel", "api", "client", "distribution", "license", "digital"],
+    "authors": [
+        {
+            "name": "UCubix",
+            "email": "dev@ucubix.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ucubix/php-client": "^1.0",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+        "spatie/laravel-data": "^4.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.5|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ucubix\\LaravelClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ucubix\\LaravelClient\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ucubix\\LaravelClient\\UcubixServiceProvider"
+            ],
+            "aliases": {
+                "Ucubix": "Ucubix\\LaravelClient\\Facades\\Ucubix"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
