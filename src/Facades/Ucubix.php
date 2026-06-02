@@ -26,7 +26,7 @@ use Ucubix\PhpClient\Dto\Product;
  * @method static PaginatedResponse getOrders(array $filters = [], int $page = 1, int $perPage = 15, string $sort = '-order_date')
  * @method static Order getOrder(string $id)
  * @method static PaginatedResponse getOrderItems(string $orderId, int $page = 1, int $perPage = 15)
- * @method static Order createOrder(string $productUuid, int $quantity, string $regionCode, ?string $countryCode = null)
+ * @method static Order createOrder(string $productUuid, int $quantity, string $regionCode, ?string $countryCode = null, ?string $externalReference = null)
  * @method static Order updateOrder(string $id, int $quantity)
  * @method static bool cancelOrder(string $id)
  * @method static LicenseKey getLicenseKey(string $id)
